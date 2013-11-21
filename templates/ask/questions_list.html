@@ -1,0 +1,29 @@
+{% extends 'ask/main_tpl.html' %}
+{% block quests %}
+    {% for quest in object_list %}
+    <div class = " quest">
+							<div class = "row-fluid">
+								<div class = "span2">
+									<div class = "counter-main" >
+										<div class = "count" align="center"> 15 </div>
+										<div class = "counter-thumbs">
+											<a href="#"><i class="icon-thumbs-up"></i></a>
+											<a href="#"><i class="icon-thumbs-down"></i></a>
+										</div>
+									</div>
+
+								</div>
+
+								<div class = "span10">
+									<h3>{{ quest.title  }}</h3>
+									<p>{{  quest.body }}</p>
+									<div class = "foot_buttons"> <a href = "#">Read Answers</a> | <a href = "#">Answer</a> | <a href = "#">Like</a> | <a href = "#">Dislike</a> | </div>
+								</div>
+
+							</div>
+					</div>
+    {% empty %}
+    <p>Нет постов</p>
+    {% endfor %}
+
+{% endblock %}
