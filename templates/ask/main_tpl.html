@@ -76,22 +76,30 @@
   </div>
   <div class="modal-body">
   	<form action="." method="post"> {% csrf_token %}
-{#  		<div class = "row-fluid">#}
-{#    		<div class = "span4"> <h3> Tittle </h3> </div>#}
-{#    		<div class = "span7"><input type="text" id = "tittle" class = "tittle_input" placeholder="Type tittle here"></div>#}
-{#    	</div>#}
-{#    	<div class = "row-fluid">#}
-{#    		<div class = "span4"> <h3> Question </h3> </div>#}
-{#    		<div class = "span7"><textarea rows="8" id = "body" placeholder = "Type your question here"></textarea>	</div>#}
-{#    	</div>#}
-{##}
-{#    	 <div class = "row-fluid">#}
-{#    		<div class = "span4"> <h3> Tags </h3> </div>#}
-{#    		<div class = "span8" valign = "center"  ><input type="text" class = "tittle_input" placeholder="Type tags here"></div>#}
-{##}
-{#    	</div>#}
+        {{ form.non_field_errors }}
+ 		<div class = "row-fluid">
+            {{form.tittle.error}}
+    		<div class = "span4"> <h3> Tittle </h3> </div>
+    		<div class = "span7">
+{#                <input type="text" class = "tittle_input" placeholder="Type tittle here">#}
+                {{form.tittle}}
+            </div>
 
-        {{ form }}
+    	</div>
+    	<div class = "row-fluid">
+            {{ form.body.error }}
+    		<div class = "span4"> <h3> Question </h3> </div>
+    		<div class = "span7">
+{#                <textarea rows="8" placeholder = "Type your question here"></textarea>#}
+                {{form.body}}
+            </div>
+    	</div>
+
+    	 <div class = "row-fluid">
+    		<div class = "span4"> <h3> Tags </h3> </div>
+    		<div class = "span8" valign = "center"  ><input type="text" class = "tittle_input" placeholder="Type tags here"></div>
+
+    	</div>
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Don't ask</button>

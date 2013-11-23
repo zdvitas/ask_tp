@@ -17,6 +17,7 @@ class Answer(models.Model):
     body = models.TextField()
     pub_date = models.DateTimeField('date published')
     quest = models.ForeignKey(Questions)
+    user = models.ForeignKey(User)
 
     def __unicode__(self):
         return self.title
