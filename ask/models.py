@@ -8,8 +8,11 @@ class Questions(models.Model):
     pub_date = models.DateTimeField('date published')
     user = models.ForeignKey(User)
 
+
     def __unicode__(self):
         return self.title + ' by ' + self.user.username
+    def get_url(self):
+        return "/quest%i" % self.id
 
 
 class Answer(models.Model):

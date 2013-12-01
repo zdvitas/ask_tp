@@ -1,9 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends 'ask/main_tpl.html' %}
+{% block quests %}
+    <div class = " quest">
+							<div class = "row-fluid">
+								<div class = "span2">
+									<div class = "counter-main" >
+										<div class = "count" align="center"> 15 </div>
+										<div class = "counter-thumbs">
+											<a href="#"><i class="icon-thumbs-up"></i></a>
+											<a href="#"><i class="icon-thumbs-down"></i></a>
+										</div>
+									</div>
 
-</body>
-</html>
+								</div>
+
+								<div class = "span10">
+									<h3>{{ quest.title }}</h3>
+									<p>{{ quest.body }}</p>
+								</div>
+
+							</div>
+					</div>
+    {% for ans in answers %}
+        <div class="answer">
+						<h4>{{ ans.title }}</h4>
+						<p> {{ ans.body }}</p>
+		</div>
+    {% endfor %}
+
+
+
+{% endblock %}

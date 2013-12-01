@@ -6,6 +6,7 @@
  <link href="{{STATIC_URL}}bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
  <link href="{{STATIC_URL}}bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ <script src="{{ STATIC_URL }}js/settings.js"></script>
  <link href="{{STATIC_URL}}css/main.css" rel="stylesheet">
  <script type="text/javascript" src="{{STATIC_URL}}bootstrap/js/bootstrap.min.js"></script>
 
@@ -75,7 +76,7 @@
     <h3 id="myModalLabel">Ask me</h3>
   </div>
   <div class="modal-body">
-  	<form action="." method="post"> {% csrf_token %}
+  	<form action="" method="post"> {% csrf_token %}
         {{ form.non_field_errors }}
  		<div class = "row-fluid">
             {{form.tittle.error}}
@@ -103,7 +104,7 @@
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Don't ask</button>
-    <button class="btn btn-success" type="submit">Ask</button>
+    <button class="btn btn-success" id="click_me" type="">Ask</button>
   </div>
    </form>
 </div>
@@ -111,5 +112,19 @@
 
 	</div>
 </body>
+
+<script>
+    $(document).ready(function(){
+        $('#click_me').click(function(e){
+            e.preventDefault()
+            $.post('/ajax/test/', {'text': $('#id_tittle').val()}, function(data){
+                    //data = $.parseJSON(data);
+                    alert(data);
+                });
+            // return false;
+        });
+    })
+
+ </script>
 
 </html>

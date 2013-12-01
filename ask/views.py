@@ -1,14 +1,22 @@
+# -*- coding: utf-8 -*-
+# coding: utf-8
 #from django.shortcuts import render
 from django.http import HttpResponse
 from ask.models import Questions
+from ask.models import Answer
 from django.views.generic import ListView ,DetailView
 import datetime
 from django.contrib.auth.models import User
 from django.views.generic.edit import FormMixin
 
-from django.http import HttpResponseRedirect
-from django.shortcuts import render
+
 from ask import forms
+
+def get_ajax_add_quest(request):
+    return HttpResponse('FUUUCK!')
+
+
+
 
 
 class QuestList(ListView, FormMixin):
@@ -25,22 +33,32 @@ class QuestList(ListView, FormMixin):
         context['form'] = self.get_form(form_class)
         return context
 
-    def post(self, request, *args, **kwargs):
-        if request.method == 'POST':
-        #self.object = self.get_object()
-            form_class = self.get_form_class()
-            form = self.get_form(form_class)
-            if form.is_valid():
-                title = form.cleaned_data['tittle']
-                body = form.cleaned_data['body']
-                b2 = Questions(title=title, body=body, pub_date=datetime.datetime.now(), user=User(1))
-                b2.save()
-                return HttpResponse('Thanks!')
-            return form.errors
+    #def post(self, request, *args, **kwargs):
+    #    if request.method == 'POST':
+    #    #self.object = self.get_object()
+    #        form_class = self.get_form_class()
+    #        form = self.get_form(form_class)
+    #        if form.is_valid():
+    #            title = form.cleaned_data['tittle']
+    #            body = form.cleaned_data['body']
+    #            b2 = Questions(title=title, body=body, pub_date=datetime.datetime.now(), user=User(1))
+    #            b2.save()
+    #            return HttpResponse('Thanks!')
+    #        return form.errors
 
 
 class QuestDetailView(DetailView):
     model = Questions
+    context_object_name = "quest"
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        context = super(QuestDetailView, self).get_context_data(**kwargs)
+        # Получаем объект нашего вопроса, для загрузки ответов
+        object = super(QuestDetailView, self).get_object()
+
+        context['answers'] = Answer.objects.filter(quest=object)
+
+        return context
 
 
 #def contact(request):

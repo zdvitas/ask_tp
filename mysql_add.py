@@ -25,7 +25,7 @@ def id_generator(size=20, chars=string.ascii_lowercase ):
 
 def gen_quest_title():
 	s1=q1[random.randint(0,2)] + q2[random.randint(0,5)] + q3[random.randint(0,4)] + q4[random.randint(0,3)]
-	return s1.decode('utf-64')
+	return s1.decode('utf-8')
 
 def gen_quest_body(count=20):
 	s = ""

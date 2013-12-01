@@ -15,9 +15,9 @@
 								</div>
 
 								<div class = "span10">
-									<h3>{{ quest.title  }}</h3>
+									<a href="{{ quest.get_url }}"><h3>{{ quest.title  }}</h3> </a>
 									<p>{{  quest.body }}</p>
-									<div class = "foot_buttons"> <a href = "#">Read Answers</a> | <a href = "#">Answer</a> | <a href = "#">Like</a> | <a href = "#">Dislike</a> | </div>
+									<div class = "foot_buttons"> <a href = "{{ quest.get_url }}">Read Answers</a> | <a href = "#">Answer</a> | <a href = "#">Like</a> | <a href = "#">Dislike</a> | </div>
 								</div>
 
 							</div>
