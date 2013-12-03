@@ -7,12 +7,15 @@ class Questions(models.Model):
     body = models.TextField()
     pub_date = models.DateTimeField('date published')
     user = models.ForeignKey(User)
-
+    class Meta:
+        ordering = ["-pub_date"]
 
     def __unicode__(self):
         return self.title + ' by ' + self.user.username
     def get_url(self):
         return "/quest%i" % self.id
+    def get_usr_url(self):
+        return "/user%i" % self.user_id
 
 
 class Answer(models.Model):

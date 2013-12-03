@@ -18,8 +18,9 @@
  			<div class = "span4 " valgin = "center"><h2>Be smart! Ask pupkin!</h2></div>
  			<div class = "span2 offset6" >
  				<ul class="nav nav-pills logout">
-              		<li class="active"><a href="#">%username%</a></li>
-              		<li class="active"><a href="#">logout</a></li>
+                    <li class="active" data-toggle="modal" data-target="#modalAuth"><a href="#" id="btn_login">Login</a></li>
+              		<li class="active" ><a href="#" style="display: none" id="id_username_head">%username%</a></li>
+              		<li class="active" id="btn_logout" style="display: none"><a href="#" >logout</a></li>
               
             	</ul>
             </div>
@@ -32,12 +33,12 @@
 		<div class="row-fluid ">
  			<div class="span9" style = "position: relative">
  				<ul class="nav nav-tabs">  <!--Navbar -->
-  					<li >
-    					<a href="#">New</a>
+  					<li class = "active">
+    					<a href="http://localhost">New</a>
   					</li>
-  					<li class = "active"><a href="#">Popular</a></li> 					
+  					<li ><a href="http://localhost">Popular</a></li>
 				</ul>
-				<button  class = "btn btn-success btn-ask"type="button" data-toggle="modal" data-target="#myModal">
+				<button  class = "btn btn-success btn-ask" id="#ask" style="display: none" type="button" data-toggle="modal" data-target="#myModal">
 				 ASK </button>
 			</div>				
 			<div class = "span1 ask_div">
@@ -76,55 +77,118 @@
     <h3 id="myModalLabel">Ask me</h3>
   </div>
   <div class="modal-body">
-  	<form action="" method="post"> {% csrf_token %}
-        {{ form.non_field_errors }}
+  	<form action="." method="post"> {% csrf_token %}
+        <div id="tittle_err" style="display: none; color: red"> Поле обязательно для заполнения </div>
  		<div class = "row-fluid">
-            {{form.tittle.error}}
-    		<div class = "span4"> <h3> Tittle </h3> </div>
-    		<div class = "span7">
-{#                <input type="text" class = "tittle_input" placeholder="Type tittle here">#}
-                {{form.tittle}}
+            <div class = "span4"> <h3> Tittle </h3> </div>
+    		<div class = "span7 form_text" >
+            {{form.tittle}}
             </div>
 
     	</div>
+        <div id="body_err" style="display: none; color: red"> Поле обязательно для заполнения </div>
     	<div class = "row-fluid">
-            {{ form.body.error }}
+
     		<div class = "span4"> <h3> Question </h3> </div>
     		<div class = "span7">
-{#                <textarea rows="8" placeholder = "Type your question here"></textarea>#}
-                {{form.body}}
+              {{form.body}}
             </div>
     	</div>
 
-    	 <div class = "row-fluid">
-    		<div class = "span4"> <h3> Tags </h3> </div>
-    		<div class = "span8" valign = "center"  ><input type="text" class = "tittle_input" placeholder="Type tags here"></div>
-
-    	</div>
-  </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Don't ask</button>
-    <button class="btn btn-success" id="click_me" type="">Ask</button>
+    <button class="btn btn-success" id="click_me" type="submit">Ask</button>
   </div>
    </form>
 </div>
+</div>
+
+<div id="modalAuth" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Ask me</h3>
+  </div>
+  <div class="modal-body">
+  	<form action="." method="post"> {% csrf_token %}
+         <div id="auth_err" style="display: none; color: red"> Ошибка авторизации </div>
+         <div id="email_err" style="display: none; color: red"> Поле обязательно для заполнения </div>
+ 		<div class = "row-fluid" id="id_email_div" style="display: none">
+            <div class = "span4"> <h3> Em@il </h3> </div>
+    		<div class = "span7 form_text" >
+            <input id="id_email" type="email" name="email">
+            </div>
+
+    	</div>
+
+        <div id="user_err" style="display: none; color: red"> Поле обязательно для заполнения </div>
+ 		<div class = "row-fluid">
+            <div class = "span4"> <h3> UserName </h3> </div>
+    		<div class = "span7 form_text" >
+            <input id="id_username" type="text" name="username">
+            </div>
+
+    	</div>
+        <div id="password_err" style="display: none; color: red"> Поле обязательно для заполнения </div>
+  		<div class = "row-fluid">
+            <div class = "span4"> <h3> Password </h3> </div>
+    		<div class = "span7 form_text" >
+            <input id="id_password" type="password" name="password">
+            </div>
+
+    	</div>
+
+  <div class="modal-footer">
+    <button class="btn btn-success" id="id_register" >Registration</button>
+    <button class="btn btn-success" id="btn_register" >Send</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+    <button class="btn btn-success" id="id_login" type="submit">Login</button>
+  </div>
+   </form>
+</div>
+</div>
 
 
-	</div>
+<div id="modalMessage" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Ask me</h3>
+  </div>
+  <div class="modal-body">
+  <p id="id_message_text">text</p>
+</div>
+</div>
+
+
+    <div class="row-fluid">
+        <div class="span9">
+
+            <div class="pagination">
+
+                <ul>
+                    {% if page_obj.has_previous %}
+
+                    <li> <a href="/page{{ page_obj.previous_page_number }}/">Prev</a></li>
+
+                    {% endif %}
+{#                    <li><a href="#">1</a></li>#}
+{#                    <li><a href="#">2</a></li>#}
+{#                    <li><a href="#">3</a></li>#}
+{#                    <li><a href="#">4</a></li>#}
+{#                    <li><a href="#">5</a></li>#}
+                     {% if page_obj.has_next %}
+                    <li><a href="/page{{ page_obj.next_page_number }}">Next</a></li>
+                    {% endif %}
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid" style="margin-top: 0px"> </br> </div>
+</div>
 </body>
 
-<script>
-    $(document).ready(function(){
-        $('#click_me').click(function(e){
-            e.preventDefault()
-            $.post('/ajax/test/', {'text': $('#id_tittle').val()}, function(data){
-                    //data = $.parseJSON(data);
-                    alert(data);
-                });
-            // return false;
-        });
-    })
 
- </script>
+<script type="text/javascript" src="{{STATIC_URL}}js/scripts.js"></script>
+
 
 </html>

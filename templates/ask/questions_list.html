@@ -17,6 +17,7 @@
 								<div class = "span10">
 									<a href="{{ quest.get_url }}"><h3>{{ quest.title  }}</h3> </a>
 									<p>{{  quest.body }}</p>
+                                    <b><p>Опубликовано : {{ quest.pub_date }} . Пользователем <a href = "{{ quest.get_usr_url }}" >{{ quest.user }} </a> </p></b>
 									<div class = "foot_buttons"> <a href = "{{ quest.get_url }}">Read Answers</a> | <a href = "#">Answer</a> | <a href = "#">Like</a> | <a href = "#">Dislike</a> | </div>
 								</div>
 

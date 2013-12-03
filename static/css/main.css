@@ -1,7 +1,15 @@
+.form_text
+{
+    vertical-align: middle;
+    margin-top: 12px;
+}
 body{
 	background-color: #fbfcfc;
 }
 
+.pagination {
+    text-align: center;
+}
 .tittle_input
 {
 	width: 100%;
@@ -35,9 +43,10 @@ textarea{
 .main-window {
 	padding-top: 10px;
 	margin-top: 0px;
+    margin-bottom: 0px;
 	border: solid 1px #ddd ; 
 	border-top: 0px;
-	margin-bottom: 50px;
+
 	
 }
 .quest {

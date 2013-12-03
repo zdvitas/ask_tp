@@ -2,18 +2,9 @@
 {% block quests %}
     <div class = " quest">
 							<div class = "row-fluid">
-								<div class = "span2">
-									<div class = "counter-main" >
-										<div class = "count" align="center"> 15 </div>
-										<div class = "counter-thumbs">
-											<a href="#"><i class="icon-thumbs-up"></i></a>
-											<a href="#"><i class="icon-thumbs-down"></i></a>
-										</div>
-									</div>
 
-								</div>
 
-								<div class = "span10">
+
 									<h3>{{ quest.title }}</h3>
 									<p>{{ quest.body }}</p>
                                     <b><p>Опубликовано : {{ quest.pub_date }} . Пользователем <a href = "{{ quest.get_usr_url }}" >{{ quest.user }} </a> </p></b>
