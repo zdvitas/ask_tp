@@ -5,8 +5,8 @@
 
  <link href="{{STATIC_URL}}bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
  <link href="{{STATIC_URL}}bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
- <script src="{{ STATIC_URL }}js/settings.js"></script>
+ <script src="{{STATIC_URL}}js/jquery.js"></script>
+<script src="{{ STATIC_URL }}js/settings.js"></script>
  <link href="{{STATIC_URL}}css/main.css" rel="stylesheet">
  <script type="text/javascript" src="{{STATIC_URL}}bootstrap/js/bootstrap.min.js"></script>
 
@@ -15,12 +15,19 @@
 	<div class = "container-fluid">
 		<!--Шапка -->
 		<div class = "row-fluid" >
- 			<div class = "span4 " valgin = "center"><h2>Be smart! Ask pupkin!</h2></div>
+ 			<div class = "span4 " valgin = "center"><h2><a href="http://localhost:8000">Be smart! Ask pupkin!</a></h2></div>
  			<div class = "span2 offset6" >
  				<ul class="nav nav-pills logout">
-                    <li class="active" data-toggle="modal" data-target="#modalAuth"><a href="#" id="btn_login">Login</a></li>
-              		<li class="active" ><a href="#" style="display: none" id="id_username_head">%username%</a></li>
-              		<li class="active" id="btn_logout" style="display: none"><a href="#" >logout</a></li>
+
+                    {% if user.is_authenticated %}
+              		    <li class="active" ><a href="#"  id="id_username_head">{{ user.username }}</a></li>
+                        <li class="active" id="btn_logout" ><a href="#" >logout</a></li>
+                        {% else %}
+                            <li class="active" data-toggle="modal" data-target="#modalAuth"><a href="#" id="btn_login">Login</a></li>
+
+                    {% endif %}
+
+
               
             	</ul>
             </div>
@@ -38,8 +45,12 @@
   					</li>
   					<li ><a href="http://localhost">Popular</a></li>
 				</ul>
-				<button  class = "btn btn-success btn-ask" id="#ask" style="display: none" type="button" data-toggle="modal" data-target="#myModal">
-				 ASK </button>
+                  {% if user.is_authenticated %}
+                      {% if state == 1%}
+				<button  class = "btn btn-success btn-ask" id="#ask"  type="button" data-toggle="modal" data-target="#myModal">ASK </button>
+                      {% endif %}
+
+                {% endif %}
 			</div>				
 			<div class = "span1 ask_div">
 			
@@ -52,6 +63,8 @@
 			<div class="span9">
 				<div class = "main-window">
 					{% block quests %}
+                    {% endblock %}
+                    {% block user_info %}
                     {% endblock %}
 				</div>
 			</div>

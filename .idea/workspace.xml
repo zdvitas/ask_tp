@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a24f60cc-5c83-460d-8089-1a2f420cc7ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/forms.py" afterPath="$PROJECT_DIR$/ask/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ask/ajax_view.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="$PROJECT_DIR$/static/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ask/main_tpl.html" afterPath="$PROJECT_DIR$/templates/ask/main_tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/models.py" afterPath="$PROJECT_DIR$/ask/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql_add.py" afterPath="$PROJECT_DIR$/mysql_add.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ask/questions_detail.html" afterPath="$PROJECT_DIR$/templates/ask/questions_detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ask/questions_list.html" afterPath="$PROJECT_DIR$/templates/ask/questions_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/scripts.js" afterPath="$PROJECT_DIR$/static/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askpupkin/settings.py" afterPath="$PROJECT_DIR$/askpupkin/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/urls.py" afterPath="$PROJECT_DIR$/ask/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ask/user_tpl.html" afterPath="$PROJECT_DIR$/templates/ask/user_tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ask/views.py" afterPath="$PROJECT_DIR$/ask/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -46,12 +46,34 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ask/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="39" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="1926">
+            <state line="13" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
               <folding>
-                <element signature="e#77#108#0" expanded="true" />
-                <element signature="e#1793#2225#0" expanded="false" />
-                <element signature="e#2777#3190#0" expanded="false" />
+                <element signature="e#40#75#0" expanded="true" />
+                <element signature="e#399#733#0" expanded="false" />
+                <element signature="e#761#1230#0" expanded="false" />
+                <element signature="e#1267#1556#0" expanded="false" />
+                <element signature="e#1603#2046#0" expanded="false" />
+                <element signature="e#2088#2491#0" expanded="false" />
+                <element signature="e#2192#2491#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajax_view.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ask/ajax_view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="33" selection-start="56" selection-end="56" vertical-scroll-proportion="-1.9695431" vertical-offset="794" max-vertical-offset="1188">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="20" selection-start="487" selection-end="487" vertical-scroll-proportion="-8.518518" vertical-offset="634" max-vertical-offset="2988">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,25 +81,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ask/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="12" selection-start="664" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="questions_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/ask/questions_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="161" selection-start="776" selection-end="776" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="630">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ask/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="558">
+            <state line="7" column="11" selection-start="211" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -86,18 +90,36 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ask/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="50" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+            <state line="4" column="25" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ask/user_tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="118" selection-start="261" selection-end="261" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="702">
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#182#207#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_tpl.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/ask/user_tpl.html">
+      <file leaf-file-name="questions_list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ask/questions_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.2706767" vertical-offset="0" max-vertical-offset="522">
+            <state line="10" column="64" selection-start="461" selection-end="461" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="questions_detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ask/questions_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="54" selection-start="506" selection-end="506" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="684">
               <folding />
             </state>
           </provider>
@@ -106,29 +128,8 @@
       <file leaf-file-name="main_tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/ask/main_tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="81" selection-start="4279" selection-end="4279" vertical-scroll-proportion="-3.8148148" vertical-offset="1031" max-vertical-offset="2160">
-              <folding>
-                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="n#style#0;n#b#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#b#10;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#b#19;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#b#22;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#form#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#form#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#div#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#6;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="n#style#0;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="48" column="38" selection-start="1703" selection-end="1703" vertical-scroll-proportion="-15.092592" vertical-offset="49" max-vertical-offset="3834">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,23 +137,7 @@
       <file leaf-file-name="scripts.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="41" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.0" vertical-offset="842" max-vertical-offset="1296">
-              <folding>
-                <element signature="e#0#42#0" expanded="false" />
-                <element signature="e#75#937#0" expanded="false" />
-                <element signature="n#!!block;n#set_login#0" expanded="false" />
-                <element signature="e#2147#2486#0" expanded="false" />
-                <element signature="e#3774#4113#0" expanded="false" />
-                <element signature="e#4153#5392#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="22" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2772">
+            <state line="117" column="30" selection-start="4126" selection-end="4126" vertical-scroll-proportion="0.0" vertical-offset="1838" max-vertical-offset="3294">
               <folding />
             </state>
           </provider>
@@ -176,30 +161,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ask/admin.py" />
         <option value="$PROJECT_DIR$/askpupkin/wsgi.py" />
         <option value="$PROJECT_DIR$/templates/ask/add_quest.html" />
         <option value="$PROJECT_DIR$/askpupkin/urls.py" />
         <option value="$PROJECT_DIR$/static/js/settings.js" />
-        <option value="$PROJECT_DIR$/askpupkin/settings.py" />
-        <option value="$PROJECT_DIR$/static/css/main.css" />
-        <option value="$PROJECT_DIR$/ask/models.py" />
-        <option value="$PROJECT_DIR$/templates/ask/questions_detail.html" />
-        <option value="$PROJECT_DIR$/templates/ask/questions_list.html" />
-        <option value="$PROJECT_DIR$/templates/ask/user_tpl.html" />
         <option value="$PROJECT_DIR$/ask/forms.py" />
-        <option value="$PROJECT_DIR$/ask/views.py" />
+        <option value="$PROJECT_DIR$/templates/ask/questions_detail.html" />
+        <option value="$PROJECT_DIR$/askpupkin/settings.py" />
+        <option value="$PROJECT_DIR$/ask/models.py" />
+        <option value="$PROJECT_DIR$/static/css/main.css" />
+        <option value="$PROJECT_DIR$/templates/ask/user_tpl.html" />
         <option value="$PROJECT_DIR$/templates/ask/main_tpl.html" />
+        <option value="$PROJECT_DIR$/templates/ask/questions_list.html" />
         <option value="$PROJECT_DIR$/static/js/scripts.js" />
         <option value="$PROJECT_DIR$/ask/urls.py" />
+        <option value="$PROJECT_DIR$/ask/views.py" />
+        <option value="$PROJECT_DIR$/ask/ajax_view.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="52" />
+    <option name="y" value="24" />
     <option name="width" value="1301" />
-    <option name="height" value="716" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -239,88 +224,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="askpupkin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="askpupkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="askpupkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="askpupkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="askpupkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="askpupkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="askpupkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="askpupkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="askpupkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="askpupkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="askpupkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="askpupkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="askpupkin" />
@@ -674,19 +577,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="52" width="1301" height="716" extended-state="7" />
-    <editor active="true" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35005337" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3492823" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2119522" sideWeight="0.82136893" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21832669" sideWeight="0.71291864" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4338118" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2119522" sideWeight="0.2982456" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17863105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28708133" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32800853" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -731,28 +634,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/ask/views.py</url>
-          <line>121</line>
+          <line>86</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/ask/views.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/ask/forms.py</url>
           <line>10</line>
           <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/ask/views.py</url>
-          <line>101</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/ask/views.py</url>
-          <line>80</line>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="django-line">
           <url>file://$PROJECT_DIR$/templates/ask/questions_detail.html</url>
@@ -763,20 +651,10 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="28" />
+      <option name="time" value="30" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="330" column="0" selection-start="12790" selection-end="12790" vertical-scroll-proportion="0.0" vertical-offset="5575" max-vertical-offset="10206" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/askpupkin/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.17331499" vertical-offset="0" max-vertical-offset="727" />
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.2/dist-packages/django/views/generic/list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="103" column="8" selection-start="3637" selection-end="3637" vertical-scroll-proportion="0.51252085" vertical-offset="1439" max-vertical-offset="3402">
@@ -789,34 +667,6 @@
         <state line="128" column="0" selection-start="4973" selection-end="4973" vertical-scroll-proportion="0.0" vertical-offset="1886" max-vertical-offset="10368" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ask/questions_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="161" selection-start="776" selection-end="776" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/askpupkin/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="26" selection-start="1248" selection-end="1248" vertical-scroll-proportion="1.4545455" vertical-offset="162" max-vertical-offset="3474">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ask/questions_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="53" selection-start="262" selection-end="262" vertical-scroll-proportion="0.16861826" vertical-offset="54" max-vertical-offset="684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ask/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="664" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ask/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
@@ -824,85 +674,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2772">
+        <state line="113" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="0.0" vertical-offset="1668" max-vertical-offset="5058" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/askpupkin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="1" selection-start="3965" selection-end="3965" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="3474">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py">
+    <entry file="file://$PROJECT_DIR$/mysql_add.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="0.21145375" vertical-offset="1668" max-vertical-offset="5058">
+        <state line="8" column="41" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1728">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="20" selection-start="487" selection-end="487" vertical-scroll-proportion="-8.518518" vertical-offset="634" max-vertical-offset="2988">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="211" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ask/user_tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="118" selection-start="261" selection-end="261" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="702">
+          <folding>
+            <element signature="e#182#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ask/questions_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="54" selection-start="506" selection-end="506" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ask/main_tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="38" selection-start="1703" selection-end="1703" vertical-scroll-proportion="-15.092592" vertical-offset="49" max-vertical-offset="3834">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ask/questions_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="64" selection-start="461" selection-end="461" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="30" selection-start="4126" selection-end="4126" vertical-scroll-proportion="0.0" vertical-offset="1838" max-vertical-offset="3294">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ask/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="25" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ask/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="39" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.0" vertical-offset="1422" max-vertical-offset="1926">
+        <state line="13" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
           <folding>
-            <element signature="e#77#108#0" expanded="true" />
-            <element signature="e#1793#2225#0" expanded="false" />
-            <element signature="e#2777#3190#0" expanded="false" />
+            <element signature="e#40#75#0" expanded="true" />
+            <element signature="e#399#733#0" expanded="false" />
+            <element signature="e#761#1230#0" expanded="false" />
+            <element signature="e#1267#1556#0" expanded="false" />
+            <element signature="e#1603#2046#0" expanded="false" />
+            <element signature="e#2088#2491#0" expanded="false" />
+            <element signature="e#2192#2491#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ask/main_tpl.html">
+    <entry file="file://$PROJECT_DIR$/ask/ajax_view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="81" selection-start="4279" selection-end="4279" vertical-scroll-proportion="-3.8148148" vertical-offset="1031" max-vertical-offset="2160">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#b#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#10;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#19;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#22;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#form#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#form#0;n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#6;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="41" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.0" vertical-offset="842" max-vertical-offset="1296">
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-            <element signature="e#75#937#0" expanded="false" />
-            <element signature="n#!!block;n#set_login#0" expanded="false" />
-            <element signature="e#2147#2486#0" expanded="false" />
-            <element signature="e#3774#4113#0" expanded="false" />
-            <element signature="e#4153#5392#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ask/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="50" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ask/user_tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.2706767" vertical-offset="0" max-vertical-offset="522">
+        <state line="1" column="33" selection-start="56" selection-end="56" vertical-scroll-proportion="-1.9695431" vertical-offset="794" max-vertical-offset="1188">
           <folding />
         </state>
       </provider>

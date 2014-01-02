@@ -5,10 +5,10 @@
 							<div class = "row-fluid">
 								<div class = "span2">
 									<div class = "counter-main" >
-										<div class = "count" align="center"> 15 </div>
+										<div class = "count" align="center"> {{ quest.raiting }} </div>
 										<div class = "counter-thumbs">
-											<a href="#"><i class="icon-thumbs-up"></i></a>
-											<a href="#"><i class="icon-thumbs-down"></i></a>
+											<a class="quest_up" id="quest_up{{ quest.id }}" href="#"><i class="icon-thumbs-up"></i></a>
+											<a class="quest_down" id="quest_down{{ quest.id }}" href="#"><i class="icon-thumbs-down"></i></a>
 										</div>
 									</div>
 

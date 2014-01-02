@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 class Questions(models.Model):
     title = models.CharField(max_length=200)
     body = models.TextField()
+    raiting = models.IntegerField()
     pub_date = models.DateTimeField('date published')
     user = models.ForeignKey(User)
     class Meta:
@@ -21,6 +22,7 @@ class Questions(models.Model):
 class Answer(models.Model):
     title = models.CharField(max_length=200)
     body = models.TextField()
+    raiting = models.IntegerField()
     pub_date = models.DateTimeField('date published')
     quest = models.ForeignKey(Questions)
     user = models.ForeignKey(User)

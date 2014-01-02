@@ -46,6 +46,7 @@ textarea{
     margin-bottom: 0px;
 	border: solid 1px #ddd ; 
 	border-top: 0px;
+    padding-left: 15px;
 
 	
 }
@@ -146,4 +147,15 @@ a{
 	border: solid 2px #C4C4C4; 
 	padding: 20px;
 
+}
+
+.quest h5
+{
+    margin-left: 10px;
+}
+
+
+.quest p
+{
+    margin-left: 20px;
 }

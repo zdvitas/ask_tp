@@ -1,20 +1,30 @@
 {% extends 'ask/main_tpl.html' %}
-{% block quests %}
-    <div class = " quest">
+{% block user_info %}
+    <div class = " user">
 							<div class = "row-fluid">
+                                <div class="span10">
 
 
+									<p style="margin-left: 10px"> <h3>User name :<b> {{ cur_user.username }} </b></h3></p>
 
-									<h3>{{ quest.title }}</h3>
-									<p>{{ quest.body }}</p>
-                                    <b><p>Опубликовано : {{ quest.pub_date }} . Пользователем <a href = "{{ quest.get_usr_url }}" >{{ quest.user }} </a> </p></b>
-								</div>
-
+                                </div>
 							</div>
-					</div>
+
+
+	</div>
+
+    <h4>Вопросы пользователя</h4>
+    {% for quest in questions %}
+        <div class="quest">
+						<h5>{{ quest.title }}</h5>
+						<p> {{ quest.body }}</p>
+		</div>
+    {% endfor %}
+
+    <h4>Ответы пользователя</h4>
     {% for ans in answers %}
         <div class="answer">
-						<h4>{{ ans.title }}</h4>
+						<h5>{{ ans.title }}</h5>
 						<p> {{ ans.body }}</p>
 		</div>
     {% endfor %}
